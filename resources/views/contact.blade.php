@@ -3,7 +3,7 @@
 @section('title','Contacto')
 
 @section('content')
-    <h2>Hola desde Contact</h2>
+    <h2>Hola desde Contact!!!!</h2>
     {{--    @if($errors->any())--}}
     {{--        @foreach($errors->all() as $error)--}}
     {{--            <p>{{$error}}</p>--}}
