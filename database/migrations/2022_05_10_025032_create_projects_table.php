@@ -16,7 +16,7 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('url')->unique();
+            $table->string('url')->unique();//no permite dos url iguales.
             $table->text('description');
             $table->timestamps();
         });
