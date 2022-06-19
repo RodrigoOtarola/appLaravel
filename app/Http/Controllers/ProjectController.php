@@ -38,7 +38,14 @@ class ProjectController extends Controller
             'url'=>'required'
         ]);*/
 
-        Project::create($request->validated());//tomara todos los campos validados
+        //para guardar imagenes en la carpeta pasada por parametro.
+        //$request->file('image')->store('images','public');
+
+        $project = new Project($request->validated());//tomara todos los campos validados
+
+        $project->image = $request->file('image')->store('images','public');
+
+        $project->save();
 
         //Project::create(request()->only('title','url','description'));
 
