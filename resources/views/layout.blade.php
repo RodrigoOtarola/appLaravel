@@ -15,10 +15,13 @@
     <link rel="stylesheet" href="../css/app.css">
 </head>
 <body>
+<div class="d-flex flex-column h-screen justify-content-between" id="app">
+
 
 @include('partials.nav')<!--Para llamar al archivo nav.blade.php-->
-<br>
+    <br>
 
-@yield('content')
+    @yield('content')
+</div>
 </body>
 </html>
